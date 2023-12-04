@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenUnidad_2_Cesar.Vista.CalcularPeso">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculando calorias perdidas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Tiempo Activo En Minutos"/>
+        <Entry Placeholder="Tiempo que duraste haciendo ejercicio" Keyboard="Numeric"/>
+        <Label Text="Peso Actual En Koligramos"/>
+        <Entry Placeholder="Peso actual" Keyboard="Numeric"/>
+        <Label Text="Resultados"/>
+        <Entry Placeholder="Reasultado del calculo" Keyboard="Numeric" IsEnabled="False"/>
+        <Button Text="calcular calorias perdidas" Command="{Binding Carlularcommand}"/>
+    </StackLayout>
+</ContentPage>
+    
